@@ -51,4 +51,46 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Contact form: send via mailto to info@ssenterprisesexim.co.in
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = (document.getElementById('name') || {}).value || '';
+            const email = (document.getElementById('email') || {}).value || '';
+            const phone = (document.getElementById('phone') || {}).value || '';
+            const message = (document.getElementById('message') || {}).value || '';
+            const successEl = document.getElementById('submitSuccessMessage');
+            const errorEl = document.getElementById('submitErrorMessage');
+
+            if (!name.trim() || !email.trim() || !phone.trim() || !message.trim()) {
+                contactForm.classList.add('was-validated');
+                if (errorEl) {
+                    errorEl.classList.remove('d-none');
+                    if (successEl) successEl.classList.add('d-none');
+                }
+                return;
+            }
+            contactForm.classList.remove('was-validated');
+
+            const subject = 'Contact from SS Enterprises Exim website';
+            const body = [
+                'Name: ' + name,
+                'Email: ' + email,
+                'Phone: ' + phone,
+                '',
+                'Message:',
+                message
+            ].join('\n');
+
+            const mailto = 'mailto:info@ssenterprisesexim.co.in?' +
+                'subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+
+            if (errorEl) errorEl.classList.add('d-none');
+            if (successEl) successEl.classList.remove('d-none');
+            window.location.href = mailto;
+        });
+    }
+
 });
