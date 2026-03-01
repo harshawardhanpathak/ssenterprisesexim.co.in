@@ -10945,6 +10945,7 @@ p {
   #mainNav.navbar-shrink .navbar-brand img.navbar-logo-mini {
     height: 3rem;
     transform: scale(5);
+    margin: 30px;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
