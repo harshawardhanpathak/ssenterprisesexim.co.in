@@ -51,4 +51,51 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Contact form: send via mailto to info@ssenterprisesexim.co.in
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = (document.getElementById('name') || {}).value || '';
+            const email = (document.getElementById('email') || {}).value || '';
+            const phone = (document.getElementById('phone') || {}).value || '';
+            const message = (document.getElementById('message') || {}).value || '';
+            const successEl = document.getElementById('submitSuccessMessage');
+            const errorEl = document.getElementById('submitErrorMessage');
+
+            // Indian mobile: 10 digits, first digit 6–9
+            const mobileRegex = /^[6-9]\d{9}$/;
+            const phoneValid = phone.replace(/\s/g, '').length === 10 && mobileRegex.test(phone.replace(/\s/g, ''));
+
+            if (!name.trim() || !email.trim() || !phone.trim() || !message.trim() || !phoneValid) {
+                contactForm.classList.add('was-validated');
+                if (errorEl) {
+                    errorEl.classList.remove('d-none');
+                    errorEl.querySelector('.text-danger').textContent = !phoneValid && phone.trim() ? 'Enter a valid 10-digit mobile number (e.g. 9405434305).' : 'Please fill in all required fields.';
+                    if (successEl) successEl.classList.add('d-none');
+                }
+                return;
+            }
+            contactForm.classList.remove('was-validated');
+
+            const subject = 'Contact from SS Enterprises Exim website';
+            const body = [
+                'Name: ' + name,
+                'Email: ' + email,
+                'Phone: ' + phone,
+                '',
+                'Message:',
+                message
+            ].join('\n');
+
+            const mailto = 'mailto:info@ssenterprisesexim.co.in?' +
+                'subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+
+            if (errorEl) errorEl.classList.add('d-none');
+            if (successEl) successEl.classList.remove('d-none');
+            window.location.href = mailto;
+        });
+    }
+
 });

@@ -20,7 +20,10 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img class="navbar-logo-full" src="assets/img/navbar-logo.png" alt="SS Enterprises Exim" />
+                    <img class="navbar-logo-mini" src="assets/img/mini-navbar-logo.png" alt="SS Enterprises Exim" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -30,7 +33,6 @@
                         <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Quick Quotation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -39,8 +41,8 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome to SS Enterprises Exim!</div>
-                <div class="masthead-heading text-uppercase">Quality Products. Reliable Exports. Long-Term Partnerships.</div>
+                <div class="masthead-heading text-uppercase">Welcome to SS Enterprises Exim!</div>
+                <div class="masthead-subheading">Quality Products. Reliable Exports. Long-Term Partnerships.</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Explore Our Products</a>
             </div>
         </header>
@@ -153,8 +155,22 @@
                                 <img class="img-fluid" src="assets/img/portfolio/baby-garments.png" alt="Baby Garments" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Baby Garments</div>
+                                <div class="portfolio-caption-heading">Baby Cloths</div>
                                 <div class="portfolio-caption-subheading text-muted">Soft, Safe & Comfortable</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/turmeric-oil.png" alt="Turmeric Oil" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Turmeric Oil</div>
+                                <div class="portfolio-caption-subheading text-muted">Pure, Aromatic & Therapeutic</div>
                             </div>
                         </div>
                     </div>
@@ -166,127 +182,94 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Commitment</h2>
-                    <h3 class="section-subheading text-muted">What we deliver to our customers worldwide</h3>
+                    <h3 class="section-subheading text-muted">Quality products we export worldwide</h3>
                 </div>
                 <div class="row text-center mt-5">
                     <div class="col-md-3 col-sm-6 mb-4 mb-lg-0">
                         <span class="fa-stack fa-3x text-primary mb-3">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-tractor fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-tshirt fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-2">Direct Farmer Contact</h4>
-                        <p class="text-muted small">Sourcing directly from trusted farmers</p>
+                        <h4 class="my-2">Textiles & Apparel</h4>
+                        <p class="text-muted small">Pure cotton handkerchiefs & baby garments</p>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-4 mb-lg-0">
                         <span class="fa-stack fa-3x text-primary mb-3">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-leaf fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-mortar-pestle fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-2">Fresh Products</h4>
-                        <p class="text-muted small">Harvested at peak ripeness</p>
+                        <h4 class="my-2">Spices & Oils</h4>
+                        <p class="text-muted small">Turmeric powder & pure turmeric oil</p>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-4 mb-lg-0">
                         <span class="fa-stack fa-3x text-primary mb-3">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-seedling fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-2">After Sales Service</h4>
-                        <p class="text-muted small">Dedicated support for every order</p>
+                        <h4 class="my-2">Healthy Snacks</h4>
+                        <p class="text-muted small">Premium makhana (fox nuts) for export</p>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-4 mb-lg-0">
                         <span class="fa-stack fa-3x text-primary mb-3">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-smile fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-2">Customer Satisfaction</h4>
-                        <p class="text-muted small">Your satisfaction is our priority</p>
+                        <h4 class="my-2">Export Ready</h4>
+                        <p class="text-muted small">Quality-checked, packed for global markets</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Associated and Certified With-->
-        <div class="py-5">
-            <div class="container">
-                <div class="text-center mb-4">
-                    <h2 class="section-heading text-uppercase">Associated and Certified With</h2>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="Partner 1" aria-label="Partner Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="Partner 2" aria-label="Partner Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="Partner 3" aria-label="Partner Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="Partner 4" aria-label="Partner Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Get in touch for quick quotation or any inquiries. We're here to help.</h3>
+                    <p class="mt-3"><a href="mailto:info@ssenterprisesexim.co.in" class="text-primary">info@ssenterprisesexim.co.in</a></p>
+                    <p class="mt-3"><i class="fas fa-phone me-2"></i><a href="tel:9405434305" class="text-primary text-decoration-none">9405434305</a></p>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <!-- Contact form: submits via mailto to info@ssenterprisesexim.co.in -->
+                <form id="contactForm" action="#" method="post">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required />
+                                <div class="invalid-feedback">A name is required.</div>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required />
+                                <div class="invalid-feedback">An email is required.</div>
                             </div>
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <!-- Phone number input (10-digit Indian mobile)-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your 10-digit mobile number *" required pattern="[6-9][0-9]{9}" maxlength="10" />
+                                <div class="invalid-feedback">Enter a valid 10-digit mobile number (e.g. 9405434305).</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" placeholder="Your Message *" required></textarea>
+                                <div class="invalid-feedback">A message is required.</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
+                    <!-- Submit success: mailto opens; this message shows if the client didn't open -->
                     <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        <div class="text-center text-success mb-3">
+                            <div class="fw-bolder">Email opened in your mail app.</div>
+                            If it didn’t open, <a href="mailto:info@ssenterprisesexim.co.in" class="text-primary">click here to email info@ssenterprisesexim.co.in</a>.
                         </div>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit error message -->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Please fill in all required fields.</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -396,10 +379,37 @@
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Baby Cloths</h2>
                                     <p class="item-intro text-muted">Soft, Safe & Comfortable</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/baby-garments.png" alt="Baby Garments" />
-                                    <p>Our baby garments are made from soft, breathable fabrics that are gentle on delicate skin. We offer a range of infant wear including onesies, rompers, and sets in safe, non-toxic materials. Ideal for newborns and toddlers, our garments meet quality and safety standards for domestic and international markets.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/baby-garments.png" alt="Baby Cloths" />
+                                    <p>Our baby cloths are made from soft, breathable fabrics that are gentle on delicate skin. We offer a range of infant wear including onesies, rompers, and sets in safe, non-toxic materials. Ideal for newborns and toddlers, our garments meet quality and safety standards for domestic and international markets.</p>
                                     <ul class="list-inline">
                                         <li><strong>Category:</strong> Apparel & Lifestyle</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Turmeric Oil</h2>
+                                    <p class="item-intro text-muted">Pure, Aromatic & Therapeutic</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/turmeric-oil.png" alt="Turmeric Oil" />
+                                    <p>Our turmeric oil is extracted from premium turmeric rhizomes to retain its natural aroma, color, and beneficial properties. Ideal for aromatherapy, skincare, and wellness applications, it is carefully processed under strict quality controls. We supply pure turmeric oil for retail, cosmetic, and bulk export requirements.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Category:</strong> Spices & Agri Products</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -416,10 +426,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
