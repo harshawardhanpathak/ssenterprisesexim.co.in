@@ -63,10 +63,15 @@ window.addEventListener('DOMContentLoaded', event => {
             const successEl = document.getElementById('submitSuccessMessage');
             const errorEl = document.getElementById('submitErrorMessage');
 
-            if (!name.trim() || !email.trim() || !phone.trim() || !message.trim()) {
+            // Indian mobile: 10 digits, first digit 6–9
+            const mobileRegex = /^[6-9]\d{9}$/;
+            const phoneValid = phone.replace(/\s/g, '').length === 10 && mobileRegex.test(phone.replace(/\s/g, ''));
+
+            if (!name.trim() || !email.trim() || !phone.trim() || !message.trim() || !phoneValid) {
                 contactForm.classList.add('was-validated');
                 if (errorEl) {
                     errorEl.classList.remove('d-none');
+                    errorEl.querySelector('.text-danger').textContent = !phoneValid && phone.trim() ? 'Enter a valid 10-digit mobile number (e.g. 9405434305).' : 'Please fill in all required fields.';
                     if (successEl) successEl.classList.add('d-none');
                 }
                 return;
